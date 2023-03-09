@@ -21,7 +21,7 @@
 
     <groupId>software.amazon.glue</groupId>
     <artifactId>schema-registry-flink-serde</artifactId>
-    <version>1.1.15.3-lenses</version>
+    <version>1.1.15.5-lenses</version>
     <name>AWS Glue Schema Registry Flink Avro Serialization Deserialization Schema</name>
     <description>The AWS Glue Schema Registry Library for Apache Flink enables Java developers to easily integrate
         their Apache Flink applications with AWS Glue Schema Registry
@@ -48,12 +48,12 @@
     </licenses>
     <distributionManagement>
         <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://aws.oss.sonatype.org/content/repositories/snapshots</url>
+            <id>Lenses.io Artifactory Snapshot</id>
+            <url>https://lenses.jfrog.io/lenses/libs-snapshot-local</url>
         </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://aws.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>Lenses.io Artifactory Release</id>
+            <url>https://lenses.jfrog.io/lenses/libs-release-local</url>
         </repository>
     </distributionManagement>
     <scm>
@@ -66,7 +66,7 @@
         <dependency>
             <groupId>software.amazon.glue</groupId>
             <artifactId>schema-registry-serde</artifactId>
-            <version>1.1.15.3-lenses</version>
+            <version>1.1.15.5-lenses</version>
         </dependency>
 
         <dependency>
