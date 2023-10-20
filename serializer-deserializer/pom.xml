@@ -32,18 +32,18 @@
     <parent>
         <groupId>software.amazon.glue</groupId>
         <artifactId>schema-registry-parent</artifactId>
-        <version>1.1.17</version>
+        <version>1.1.17.1-lenses</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <distributionManagement>
         <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://aws.oss.sonatype.org/content/repositories/snapshots</url>
+            <id>Lenses.io Artifactory Snapshot</id>
+            <url>https://lenses.jfrog.io/lenses/libs-snapshot-local</url>
         </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://aws.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>Lenses.io Artifactory Release</id>
+            <url>https://lenses.jfrog.io/lenses/libs-release-local</url>
         </repository>
     </distributionManagement>
     <licenses>

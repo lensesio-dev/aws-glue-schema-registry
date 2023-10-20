@@ -21,7 +21,7 @@
 
     <groupId>software.amazon.glue</groupId>
     <artifactId>schema-registry-parent</artifactId>
-    <version>1.1.17</version>
+    <version>1.1.17.1-lenses</version>
     <packaging>pom</packaging>
     <name>AWS Glue Schema Registry Library</name>
     <description>The AWS Glue Schema Registry Library for Java enables Java developers to easily integrate their
@@ -46,19 +46,19 @@
             </roles>
         </developer>
     </developers>
-    <scm>
+    <!--<scm>
         <connection>scm:git:https://github.com/aws/aws-glue-schema-registry.git</connection>
         <developerConnection>scm:git:git@github.com:aws/aws-glue-schema-registry.git</developerConnection>
         <url>https://github.com/awslabs/aws-glue-schema-registry.git</url>
-    </scm>
+    </scm>-->
     <distributionManagement>
         <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://aws.oss.sonatype.org/content/repositories/snapshots</url>
+            <id>Lenses.io Artifactory Snapshot</id>
+            <url>https://lenses.jfrog.io/lenses/libs-snapshot-local</url>
         </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://aws.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>Lenses.io Artifactory Release</id>
+            <url>https://lenses.jfrog.io/lenses/libs-release-local</url>
         </repository>
     </distributionManagement>
 
@@ -498,38 +498,4 @@
             </plugin>
         </plugins>
     </build>
-    <profiles>
-        <profile>
-            <id>publishing</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.6</version>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.sonatype.plugins</groupId>
-                        <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>1.6.8</version>
-                        <extensions>true</extensions>
-                        <configuration>
-                            <serverId>sonatype-nexus-staging</serverId>
-                            <nexusUrl>https://aws.oss.sonatype.org</nexusUrl>
-                            <autoReleaseAfterClose>false</autoReleaseAfterClose>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 </project>

@@ -50,35 +50,35 @@ public class ProtobufSchemaLoader {
     //These files need to be manually loaded into the FileSystem
     //as Square doesn't support them by default.
     private final static Set<String> GOOGLE_API_PROTOS =
-        ImmutableSet.<String>builder()
-            .add("money.proto")
-            .add("timeofday.proto")
-            .add("date.proto")
-            .add("calendar_period.proto")
-            .add("color.proto")
-            .add("dayofweek.proto")
-            .add("latlng.proto")
-            .add("fraction.proto")
-            .add("month.proto")
-            .add("phone_number.proto")
-            .add("postal_address.proto")
-            .add("localized_text.proto")
-            .add("interval.proto")
-            .add("expr.proto")
-            .add("quaternion.proto")
-            .build();
+            ImmutableSet.<String>builder()
+                    .add("money.proto")
+                    .add("timeofday.proto")
+                    .add("date.proto")
+                    .add("calendar_period.proto")
+                    .add("color.proto")
+                    .add("dayofweek.proto")
+                    .add("latlng.proto")
+                    .add("fraction.proto")
+                    .add("month.proto")
+                    .add("phone_number.proto")
+                    .add("postal_address.proto")
+                    .add("localized_text.proto")
+                    .add("interval.proto")
+                    .add("expr.proto")
+                    .add("quaternion.proto")
+                    .build();
     //Adding support for Protobuf well-known types under package google.protobuf that are not covered by Square
     //https://developers.google.com/protocol-buffers/docs/reference/google.protobuf
     //These files need to be manually loaded into the FileSystem
     //as Square doesn't support them by default.
     private final static Set<String> GOOGLE_WELLKNOWN_PROTOS =
-        ImmutableSet.<String>builder()
-            .add("api.proto")
-            .add("field_mask.proto")
-            .add("source_context.proto")
-            .add("struct.proto")
-            .add("type.proto")
-            .build();
+            ImmutableSet.<String>builder()
+                    .add("api.proto")
+                    .add("field_mask.proto")
+                    .add("source_context.proto")
+                    .add("struct.proto")
+                    .add("type.proto")
+                    .build();
 
     private final static String METADATA_PROTO = "metadata.proto";
     private final static String DECIMAL_PROTO = "decimal.proto";
@@ -155,7 +155,7 @@ public class ProtobufSchemaLoader {
         throws IOException {
         final FakeFileSystem inMemoryFileSystem = getFileSystem();
 
-        String [] dirs = {};
+        String[] dirs = {};
         if (packageName.isPresent()) {
             dirs = packageName.get().split("\\.");
         }
@@ -168,12 +168,12 @@ public class ProtobufSchemaLoader {
             SchemaLoader schemaLoader = new SchemaLoader(inMemoryFileSystem);
                 schemaLoader.initRoots(Lists.newArrayList(Location.get("/")), Lists.newArrayList(Location.get("/")));
 
-                Schema schema = schemaLoader.loadSchema();
-                ProtoFile protoFile = schema.protoFile(path.toString().replaceFirst("/", ""));
+            Schema schema = schemaLoader.loadSchema();
+            ProtoFile protoFile = schema.protoFile(path.toString().replaceFirst("/", ""));
 
-                if (protoFile == null) {
-                    throw new RuntimeException("Error loading Protobuf File: " + protoFileName);
-                }
+            if (protoFile == null) {
+                throw new RuntimeException("Error loading Protobuf File: " + protoFileName);
+            }
 
                 return new ProtobufSchemaLoaderContext(schema, protoFile);
         } catch (Exception e) {

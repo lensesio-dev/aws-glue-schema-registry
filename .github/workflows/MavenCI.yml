@@ -2,13 +2,13 @@ name: MavenCI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, lenses-master ]
   pull_request:
-    branches: [ master ]
+    branches: [ master, lenses-master ]
   release:
-    branches: [ master ]
-    types: [ created ]
-
+    branches: [ master, lenses-master ]
+    types: [ created ]  
+    
 jobs:
   build:
     runs-on: ${{ matrix.operating-system }}
