@@ -19,7 +19,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>${parent.groupId}</groupId>
+    <groupId>software.amazon.glue</groupId>
     <artifactId>schema-registry-serde-msk-iam</artifactId>
     <name>AWS Glue Schema Registry Serializer Deserializer with MSK IAM Authentication client</name>
     <description>The AWS Glue Schema Registry Serializer/Deserializer enables Java developers to easily integrate
@@ -27,7 +27,7 @@
         clients to authenticate to Amazon MSK using IAM.
     </description>
     <url>https://aws.amazon.com/glue</url>
-    <version>${parent.version}</version>
+    <version>1.1.27-lenses</version>
     <packaging>jar</packaging>
 
     <parent>
@@ -67,9 +67,9 @@
             <version>${aws.msk.iam.auth}</version>
         </dependency>
         <dependency>
-            <groupId>${parent.groupId}</groupId>
+            <groupId>software.amazon.glue</groupId>
             <artifactId>schema-registry-serde</artifactId>
-            <version>${parent.version}</version>
+            <version>1.1.27-lenses</version>
         </dependency>
     </dependencies>
     <build>

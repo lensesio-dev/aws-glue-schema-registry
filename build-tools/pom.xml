@@ -26,9 +26,9 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>${parent.groupId}</groupId>
+    <groupId>software.amazon.glue</groupId>
     <artifactId>schema-registry-build-tools</artifactId>
-    <version>${parent.version}</version>
+    <version>1.1.27-lenses</version>
     <name>AWS Glue Schema Registry Build Tools</name>
     <description>The AWS Glue Schema Registry build tools helps run code coverage for AWS Glue Schema Registry Library
     </description>

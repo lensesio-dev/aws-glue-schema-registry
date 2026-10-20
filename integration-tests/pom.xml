@@ -19,9 +19,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>${parent.groupId}</groupId>
+    <groupId>software.amazon.glue</groupId>
     <artifactId>schema-registry-integration-tests</artifactId>
-    <version>${parent.version}</version>
+    <version>1.1.27-lenses</version>
     <name>AWS Glue Schema Registry Integration Tests</name>
     <description>The AWS Glue Schema Registry tests would do a sanity check for the schema registry library.
     </description>
@@ -64,12 +64,12 @@
         <dependency>
             <groupId>software.amazon.glue</groupId>
             <artifactId>schema-registry-serde</artifactId>
-            <version>${parent.version}</version>
+            <version>1.1.27-lenses</version>
         </dependency>
         <dependency>
             <groupId>software.amazon.glue</groupId>
             <artifactId>schema-registry-kafkastreams-serde</artifactId>
-            <version>${parent.version}</version>
+            <version>1.1.27-lenses</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -191,7 +191,7 @@
         <dependency>
             <groupId>software.amazon.glue</groupId>
             <artifactId>schema-registry-serde</artifactId>
-            <version>${parent.version}</version>
+            <version>1.1.27-lenses</version>
             <classifier>tests</classifier>
             <scope>test</scope>
         </dependency>

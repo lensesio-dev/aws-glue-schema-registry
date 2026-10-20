@@ -19,9 +19,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>${parent.groupId}</groupId>
+    <groupId>software.amazon.glue</groupId>
     <artifactId>schema-registry-kafkaconnect-converter</artifactId>
-    <version>${parent.version}</version>
+    <version>1.1.27-lenses</version>
     <name>AWS Glue Schema Registry Kafka Connect AVRO Converter</name>
     <description>The AWS Glue Schema Registry Kafka Connect Converter enables Java developers to easily integrate
         their Kafka Connect applications with AWS Glue Schema Registry
@@ -61,9 +61,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>${parent.groupId}</groupId>
+            <groupId>software.amazon.glue</groupId>
             <artifactId>schema-registry-serde</artifactId>
-            <version>${parent.version}</version>
+            <version>1.1.27-lenses</version>
         </dependency>
         <dependency>
             <groupId>org.apache.kafka</groupId>

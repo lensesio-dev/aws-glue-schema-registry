@@ -26,9 +26,9 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>${parent.groupId}</groupId>
+    <groupId>software.amazon.glue</groupId>
     <artifactId>schema-registry-common</artifactId>
-    <version>${parent.version}</version>
+    <version>1.1.27-lenses</version>
     <name>AWS Glue Schema Registry common</name>
     <description>The AWS Glue Schema Common is the common package used by AWS Glue Schema Registry Library and has
         the core functionality.
@@ -66,9 +66,9 @@
             <artifactId>glue</artifactId>
         </dependency>
         <dependency>
-            <groupId>${parent.groupId}</groupId>
+            <groupId>software.amazon.glue</groupId>
             <artifactId>schema-registry-build-tools</artifactId>
-            <version>${parent.version}</version>
+            <version>1.1.27-lenses</version>
         </dependency>
         <dependency>
             <groupId>software.amazon.awssdk</groupId>

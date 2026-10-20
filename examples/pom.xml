@@ -19,9 +19,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>${parent.groupId}</groupId>
+    <groupId>software.amazon.glue</groupId>
     <artifactId>schema-registry-examples</artifactId>
-    <version>${parent.version}</version>
+    <version>1.1.27-lenses</version>
     <name>AWS Glue Schema Registry examples</name>
     <description>The AWS Glue Schema examples has sample code for using Schema Registry with different applications.
     </description>
@@ -69,9 +69,9 @@
             <artifactId>jackson-dataformat-cbor</artifactId>
         </dependency>
         <dependency>
-            <groupId>${parent.groupId}</groupId>
+            <groupId>software.amazon.glue</groupId>
             <artifactId>schema-registry-serde</artifactId>
-            <version>${parent.version}</version>
+            <version>1.1.27-lenses</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>

@@ -19,12 +19,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>${parent.groupId}</groupId>
+    <groupId>software.amazon.glue</groupId>
     <artifactId>multilang-schema-registry</artifactId>
     <name>Native AWS Schema Registry</name>
     <description>AWS Glue Schema Registry native shared library wrapper</description>
     <url>https://aws.amazon.com/glue</url>
-    <version>${parent.version}</version>
+    <version>1.1.27-lenses</version>
     <packaging>jar</packaging>
 
     <parent>
@@ -80,9 +80,9 @@
 
         <dependency>
             <!-- Optimize this dependency for reducing the shared library size -->
-            <groupId>${parent.groupId}</groupId>
+            <groupId>software.amazon.glue</groupId>
             <artifactId>schema-registry-serde</artifactId>
-            <version>${parent.version}</version>
+            <version>1.1.27-lenses</version>
         </dependency>
 
         <dependency>

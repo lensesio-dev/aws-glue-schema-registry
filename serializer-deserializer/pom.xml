@@ -19,14 +19,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>${parent.groupId}</groupId>
+    <groupId>software.amazon.glue</groupId>
     <artifactId>schema-registry-serde</artifactId>
     <name>AWS Glue Schema Registry Serializer Deserializer</name>
     <description>The AWS Glue Schema Registry Serializer/Deserializer enables Java developers to easily integrate
         their Apache Kafka and AWS Kinesis applications with AWS Glue Schema Registry
     </description>
     <url>https://aws.amazon.com/glue</url>
-    <version>${parent.version}</version>
+    <version>1.1.27-lenses</version>
     <packaging>jar</packaging>
 
     <parent>
@@ -71,9 +71,9 @@
             <version>${aws.sdk.v2.version}</version>
         </dependency>
         <dependency>
-            <groupId>${parent.groupId}</groupId>
+            <groupId>software.amazon.glue</groupId>
             <artifactId>schema-registry-common</artifactId>
-            <version>${parent.version}</version>
+            <version>1.1.27-lenses</version>
         </dependency>
         <dependency>
             <groupId>software.amazon.awssdk</groupId>
